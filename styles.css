@@ -1,0 +1,365 @@
+/* Universal Styles */
+
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #9f319f;
+}
+
+#navbar{
+position: fixed;
+top: 0;
+bottom: 0;
+width: 100%;
+z-index: 1000;
+border-bottom: 2px solid #555;
+}
+
+.menu{
+  display: flex;
+  justify-content: space-between;
+  background-color: #9f319f;
+  width: 100%;
+  /* border-bottom-style: double; */
+  box-shadow: 0px 8px 20px black;
+
+}
+.menu ul{
+  display: flex;
+  list-style: none;
+  font-size: 1.5rem;
+  margin-right: 70px;
+}
+
+.menu ul a{
+  color: whitesmoke;
+  text-decoration: none;
+}
+.menu li{
+  margin-right: 30px;
+}
+.menu h1 {
+  margin-right: 10px;
+  color: whitesmoke;
+  font-family: "Fugaz One",sans-serif
+}
+
+.items {
+  margin-left: 20px;
+}
+.items h1{
+  white-space: nowrap;
+  font-family: "Fugaz One",sans-serif
+}
+
+/* Media query when screen is less then 768px for navbar */
+@media screen and (max-width: 768px) {
+  .menu{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.menu li {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+.items{
+  text-align: center;
+}
+.menu h1 {
+  margin-right: 0px;
+  text-align: center;
+}
+  
+}
+
+/* Media query when screen is less then 768px for navbar */
+
+#club-heading{
+  margin-top: 150px;
+  text-align: center;
+  font-size: 2.5rem;
+  line-height: 0.5em;
+  color: whitesmoke;
+  border: 1px solid black;
+  background-color: black;
+  opacity: 0.4;
+}
+
+/* Media query when screen is less then 768px for club-heading & about*/
+
+@media screen and (max-width: 768px) and (min-width: 390px){
+
+  #club-heading{
+  text-align: center;
+  /* width: 550px;*/
+  font-size: 1rem;
+  line-height: 1;
+  }
+
+.main-img{
+  height: auto;
+  width: 100%;
+  /*margin-left: 17px;*/
+  }
+  #about-club, p{
+    height: auto;
+    text-align: center;
+    /*margin-left: 50px;*/
+  }
+}
+
+/* Media query when screen is less then 768px for club-heading & about*/
+
+#about-club, p{
+  text-align: center;
+  margin-top: 50px;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: whitesmoke;
+}
+
+.main-img{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 50px;
+  
+}
+
+.main-img img{
+  width: 900px;
+  height: 500px;
+}
+.quote-container{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 6%;
+}
+
+.quote-container p{
+  font-size: 1.5rem;
+  color: whitesmoke;
+  font-style: italic;
+}
+
+/* Media query when screen is less then 768px for quote*/
+@media screen and (max-width: 768px){
+
+.quote-container{
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 6%;
+  /*margin-left: 90px;*/
+}
+.quote-container p{
+  text-align: center;
+  position: initial;
+  
+}
+}
+/* Media query when screen is less then 768px for quote*/
+
+
+.photos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photos img{
+  width: 30%;
+  white-space: nowrap;
+  margin: 1.5%;
+}
+
+/* Media query when screen is less then 768px for photos*/
+
+@media screen and (max-width: 768px){
+.photos{
+  /* display: flex; */
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /* margin-left: 90px;*/
+}
+
+.photos img{
+  width: 80%;
+  height: auto;
+  /* white-space: nowrap; */
+  margin: 1.5%;
+}
+}
+
+/* Media query when screen is less then 768px for photos*/
+
+
+.quote2-container{
+display: flex;
+justify-content: space-around;
+border: solid 1px black;
+height: 200px;
+background-color: whitesmoke;
+margin-top: 5%;
+}
+
+.quote2-container p{
+  color: #9f319f;
+font-size: 1.8rem;
+text-align-last: start;
+text-align: start;
+margin-left: 1.7rem;
+}
+
+/* Media query when screen is less then 768px for quotes-2*/
+
+
+@media screen and (max-width: 768px){
+.quote2-container{
+  display: flex;
+  justify-content: space-around;
+  border: solid 1px black;
+  height: auto;
+  background-color: whitesmoke;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  /*width: 129%;*/
+  text-align: center;
+  }
+}
+
+/* Media query when screen is less then 768px for quotes-2*/
+
+.photos-2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photos-2 img{
+  width: 30%;
+  white-space: nowrap;
+  margin: 1.5%;
+}
+
+ .photos-3{
+  margin-bottom: 3rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.photos-3 img{
+  width: 40%;
+  height: 20%;
+} 
+
+.photos-3 p{
+  text-align: center;
+  font-size: 1.8rem;
+  font-style: italic;
+  margin-top: 6rem;
+} 
+
+/* Media query when screen is less then 768px for photos-2*/
+@media screen and (max-width: 768px){
+.photos-2{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+width: 100%;
+/*margin-left: 70px;*/
+}
+
+.photos-2 img{
+width: 80%;
+height: auto;
+white-space: nowrap;
+margin: 1.5%;
+}
+.photos-3{
+margin-bottom: 3rem;
+text-align: center;
+justify-content: center;
+align-items: center;
+align-content: center;
+/*margin-left: 110px;*/
+}
+.photos-3 img{
+width: 100%;
+height: auto;
+} 
+.photos-3 p{
+text-align: center;
+font-size: 1.8rem;
+font-style: italic;
+margin-top: 6rem;
+} 
+
+}
+
+/* Media query when screen is less then 768px for quotes-2*/
+
+#meet-time{
+text-align: center;
+font-size: 1.8rem;
+font-style: italic;
+margin-top: 1.2rem;
+} 
+
+
+
+.contact-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: Helvetica;
+  color: whitesmoke;
+  height:  200px;
+  margin-top: 15%;
+  opacity: 0.7;
+}
+
+.contact-container h5{
+font-size: 1rem;
+line-height: 0.1rem;
+
+}
+
+
+#copyright {
+  font-size: 20px;
+  font-family: Helvetica;
+  color: whitesmoke;
+  opacity: 0.5;
+  margin-left: 20px;
+}
+
+/* Media query when screen is less then 768px for footer*/
+@media screen and (max-width: 768px){
+.contact-container{
+text-align: center;
+/*margin-left: 100px;*/
+}
+#copyright {
+text-align: center;
+/*margin-left: 100px;*/
+}
+}
+
+/* Media query when screen is less then 768px for footer*/
